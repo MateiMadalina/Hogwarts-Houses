@@ -1,12 +1,17 @@
 package com.codecool.hogwartshouses.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.codecool.hogwartshouses.model.types.HouseType;
+import com.codecool.hogwartshouses.model.types.PetType;
+import lombok.*;
 
-@Data
-@NoArgsConstructor
+@Getter
+@Setter
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Student {
-
+    private Long id;
+    private String name;
+    private HouseType houseType;
+    private PetType petType;
 }
