@@ -36,4 +36,9 @@ private RoomService roomService;
         roomService.removeRoomById(id);
     }
 
+    @PutMapping(value = "rooms/{id}")
+    public void updateRoom(@PathVariable Long id, @RequestBody Room room){
+        roomService.updateRoomByID(id,room);
+    }
+
 }

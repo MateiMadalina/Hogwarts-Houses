@@ -27,4 +27,8 @@ public class RoomService {
     public void removeRoomById(Long id){
         roomDAO.removeRoomByID(id);
     }
+
+    public void updateRoomByID(Long id, Room room){
+        roomDAO.updateRoomByID(id,room);
+    }
 }

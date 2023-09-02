@@ -43,4 +43,10 @@ public class RoomMemory implements RoomDAO {
     public void removeRoomByID(Long id) {
         rooms.removeIf(room -> room.getId().equals(id));
     }
+
+    @Override
+    public void updateRoomByID(Long id, Room room) {
+        Room roomToRenovate = rooms.stream().filter(r -> r.getId().equals(id)).collect(Collectors.toList()).get(0);
+        roomToRenovate.setCapacity(room.getCapacity());
+    }
 }
