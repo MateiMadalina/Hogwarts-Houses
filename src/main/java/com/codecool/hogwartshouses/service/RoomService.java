@@ -19,4 +19,12 @@ public class RoomService {
     public void addRoom(Room room) {
         roomDAO.addRoom(room);
     }
+
+    public Room getRoomByID(Long id){
+        return roomDAO.findRoomByID(id);
+    }
+
+    public void removeRoomById(Long id){
+        roomDAO.removeRoomByID(id);
+    }
 }
