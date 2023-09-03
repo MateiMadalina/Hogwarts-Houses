@@ -35,4 +35,8 @@ public class RoomService {
     public Set<Room> availableRoom() {
         return roomDAO.availableRoom();
     }
+
+    public Set<Room> roomsWithoutCatAndOwls() {
+        return roomDAO.roomsWithoutCatAndOwls();
+    }
 }

@@ -45,4 +45,9 @@ private RoomService roomService;
         return roomService.availableRoom();
     }
 
+    @GetMapping(value = "rooms/rat-owners")
+    public Set<Room> getRoomsRatOwners(){
+        return roomService.roomsWithoutCatAndOwls();
+    }
+
 }
