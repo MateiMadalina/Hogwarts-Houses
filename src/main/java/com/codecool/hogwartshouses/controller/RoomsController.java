@@ -4,7 +4,6 @@ import com.codecool.hogwartshouses.model.Room;
 import com.codecool.hogwartshouses.service.RoomService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Locale;
 import java.util.Set;
 
 @RestController
