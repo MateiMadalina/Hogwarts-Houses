@@ -40,4 +40,9 @@ private RoomService roomService;
         roomService.updateRoomByID(id,room);
     }
 
+    @GetMapping(value = "rooms/available")
+    public Set<Room> availableRoom(){
+        return roomService.availableRoom();
+    }
+
 }

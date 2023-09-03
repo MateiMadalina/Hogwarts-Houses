@@ -11,4 +11,5 @@ public interface RoomDAO {
     Room findRoomByID(Long id);
     void removeRoomByID(Long id);
     void updateRoomByID(Long id, Room room);
+    Set<Room> availableRoom();
 }

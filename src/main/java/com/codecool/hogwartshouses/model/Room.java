@@ -12,5 +12,6 @@ import java.util.Set;
 @Setter
 public class Room {
     private Long id;
+    private Set<Student> students;
     private Integer capacity;
 }
